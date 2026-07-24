@@ -13,7 +13,7 @@ streamlit run app.py
 
 Then open the local URL Streamlit prints (usually http://localhost:8501).
 
-## Deploy it as a hosted web app (free)
+## Deploy it as a hosted web app 
 
 1. Push this folder to a GitHub repo (public or private).
 2. Go to https://share.streamlit.io and sign in with GitHub.
@@ -23,17 +23,6 @@ Then open the local URL Streamlit prints (usually http://localhost:8501).
 The app is responsive by default: on a phone, the column layouts stack
 vertically automatically.
 
-## Project structure
-
-```
-ebb-dashboard/
-├── app.py                          # Streamlit app (sidebar filters + live charts)
-├── requirements.txt
-├── data/
-│   ├── enriched_transactions.csv   # Row-level, filterable: Jul 2025 - May 2026
-│   │                                 (material type, segment, region joined in)
-│   └── historical_context.csv      # Legacy system, 2022 - Jun 2025 (unfiltered panel)
-```
 
 ## Filters
 
@@ -47,7 +36,7 @@ All KPIs, charts, and the segment/material breakdowns update live from these fil
 The historical context panel intentionally ignores filters since it's a separate,
 non-comparable data source.
 
-## Known data limitations (for your report)
+## Known data limitations 
 
 - **System migration**: Every Bottle Back's tracking moved from a manual log
   (Simple Count, 2022–mid 2025) to an accounting/collection system (Jul 2025
